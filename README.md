@@ -3,7 +3,7 @@ This project is divided into two parts:
 
 ### The first part
 **modifying RSA implementation to use Montgomery modular multiplication** instead of normal modular multiplication.  
-That improves performance speed in the decryption process significantly, almost doubles it, after applying some changes in the way of how to use bigInteger class.  
+That can seed up the performance in the decryption process, almost twice, after applying some changes in the way of using bigInteger class.  
 This part uses **crypto.java** and **montgomery.java** classes.  
 
 ### The second part
