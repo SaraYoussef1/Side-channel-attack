@@ -15,10 +15,12 @@ To estimate targeted bit, the used technique in **attack.java** class works as t
 
 1. For each sample, program makes two assumptions about the targeted bit, one for zero and another for one.
 2. For each assumption program performs Montgomery modular multiplication and classify this sample running time according to reduction step in one of the following four lists:
-3. The assumption is 1 and there is reduction, average running time of this list is μ1
-4. The assumption is 1 and there is no reduction, average running time of this list is μ2
-5. The assumption is 0 and there is reduction, average running time of this list is μ3
-6. The assumption is 0 and there is no reduction, average running time of this list is μ4
-7. If the target bit is 1, it's expected that μ1 > μ2 and μ3 ≈ μ4
-8. If the target bit is 0, it's expected that μ3 > μ4 and μ1 ≈ μ2
-9. A simple check during the experiment is to check the relationship between μ1 - μ2 and μ3 - μ4 , then decide based on which is larger.
+
+a. The assumption is 1 and there is reduction, average running time of this list is μ1
+b. The assumption is 1 and there is no reduction, average running time of this list is μ2
+c. The assumption is 0 and there is reduction, average running time of this list is μ3
+d. The assumption is 0 and there is no reduction, average running time of this list is μ4
+
+3. If the target bit is 1, it's expected that μ1 > μ2 and μ3 ≈ μ4
+4. If the target bit is 0, it's expected that μ3 > μ4 and μ1 ≈ μ2
+5. A simple check during the experiment is to check the relationship between μ1 - μ2 and μ3 - μ4 , then decide based on which is larger.  
